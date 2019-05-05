@@ -12,6 +12,20 @@
                 "--nolazy"
             ],
             "console": "internalConsole",
+        },
+        {
+            "type": "nwjs",
+            "request": "launch",
+            "name": "Launch linux debugger",
+            "nwjsVersion": "any",
+            "runtimeExecutable": "${workspaceFolder}/cache/0.33.4-sdk/linux64/nw",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "${workspaceRoot}",
+                "--remote-debugging-port=9222"
+            ],
+            "reloadAfterAttached": false,
+            "port": 9222
         }
     ]
 }
